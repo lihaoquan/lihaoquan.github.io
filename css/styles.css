@@ -1,0 +1,284 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "PT Serif", system-ui;
+    background-color: #f8f8fe;
+    color: #1c1d1e;
+}
+
+h1, h2, h3, h4, h5, b {
+    font-weight: bold;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 3.157rem;
+}
+
+h2 {
+    font-size: 2.369rem;
+}
+
+p {
+    font-size: 16px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 800px;
+    margin: 3em auto;
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"],
+select,
+textarea {
+    font-family: "PT Sans", sans-serif;
+    padding: 10px;
+    border: 1px solid #bbbbbb;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#instructions {
+    border: 1px solid #bbbbbb;
+    background-color: #ffffff;
+    padding: 1em 2em;
+    border-radius: 4px;
+}
+
+#instructions li {
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    font-family: "PT Sans", sans-serif;
+    line-height: 1.5;
+    border-bottom: 1px solid #ececf1;
+}
+
+#instructions li:last-of-type {
+    border-bottom: none;
+}
+
+#instructions h2 {
+    line-height: 1.6;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 10em;
+}
+
+select {
+    cursor: pointer;
+}
+
+.image-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.image-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+    height: 600px;
+    position: relative;
+}
+
+#preview-image {
+    max-width: 100%;
+    display: block;
+    position: absolute;
+    top: 2.5em;
+    z-index: -1;
+}
+
+.tree-template::before,
+.structure-template::before,
+.action-template::before,
+.action-free::before,
+.yokai-good::before,
+.yokai-bad::before,
+.event-natural-disaster::before, 
+.event-good::before,
+.event-bad::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.tree-template::before {
+    background-image: url('../images/tree_template.png');
+}
+
+.structure-template::before {
+    background-image: url('../images/structure_template.png');
+}
+
+.action-template::before {
+    background-image: url('../images/action_template.png');
+}
+
+.action-free::before {
+    background-image: url('../images/action_free.png');
+}
+
+.yokai-good::before {
+    background-image: url('../images/yokai_good.png');
+}
+
+.yokai-bad::before {
+    background-image: url('../images/yokai_bad.png');
+}
+
+.event-natural-disaster::before {
+    background-image: url('../images/event_natural_disaster.png');
+}
+
+.event-good::before {
+    background-image: url('../images/event_good.png');
+}
+
+.event-bad::before {
+    background-image: url('../images/event_bad.png');
+}
+
+.instruction {
+    margin-top: 1em;
+    font-weight: bold;
+    font-family: "PT Sans", sans-serif;
+    text-align: center;
+}
+
+.lumber-overlay, .header-overlay, .title-overlay, .description-overlay {
+    font-weight: bold;
+}
+
+.lumber-overlay {
+    white-space: pre-wrap;
+    line-height: 1.2em;
+    text-align: center;
+    position: absolute;
+    font-family: "PT Serif", system-ui;
+    top: 5em;
+    right: 13em;
+    padding: 10px;
+    border-radius: 4px;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.header-overlay {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    text-align: center;
+    width: max-content;
+}
+
+.title-overlay {
+    position: absolute;
+    top: 21em;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: max-content;
+}
+
+.description-overlay {
+    position: absolute;
+    top: 24em;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 280px;
+    white-space: pre-wrap;
+    line-height: 1.2em;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+}

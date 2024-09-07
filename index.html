@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS2234 Forestry Card Game</title>
+    <link rel="canonical" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Yuji+Syuku&PT+Sans:ital,wght@0,400&display=swap;"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form>
+            <h1>Card Editor</h1>
+            <div id="instructions">
+                <h2>Gameplay</h2>
+                <ol>
+                    <li>1. There are two decks: the <b>Normal Deck</b> (containing <b>Lumber</b>, <b>Structure</b>, and
+                        <b>Action</b> cards) and the <b>Event Deck</b> (containing <b>Event</b> cards).</li>
+                    <li>2. Distribute 5 cards to each player from the <b>Normal Deck</b>.</li>
+                    <li>3. At the start of each turn, the player draws 2 cards from the <b>Normal Deck</b>.</li>
+                    <li>4. A player can perform up to 3 <b>actions</b> per turn.</li>
+                    <li>5. If a player has more than 7 cards at the end of their turn, they must <b>discard</b> the
+                        excess cards.</li>
+                    <li>6. A card is &ldquo;<b>In Play</b>&rdquo; when placed on the board; it is no longer considered
+                        &ldquo;<b>In Hand</b>&rdquo;.</li>
+                    <li>7. <b>Building Structures</b> costs <b>Lumber cards</b>; discard the required <b>Lumber
+                            cards</b> accordingly.</li>
+                    <li>8. <b>Structures</b> can be used as <b>Lumber</b> by placing them with <b>Lumber cards</b>.</li>
+                    <li>9. After every player has taken a turn, draw an <b>Event card</b> from the <b>Event Deck</b> and
+                        react to it.</li>
+                    <li>10. Repeat steps 3&ndash;9 until the <b>Event Deck</b> is empty.</li>
+                    <li>11. The player with the most <b>points</b> at the end (sum of points from <b>Structure</b> &amp;
+                        <b>Lumber cards</b> In Play) <b>wins</b>.</li>
+                </ol>
+            </div>
+            <div class="form-group">
+                <label>Card Type</label>
+                <select value="1">
+                    <option value="1">Lumber</option>
+                    <option value="2">Structure</option>
+                    <option value="3">Action - Policy</option>
+                    <option value="4">Action - Open Ended</option>
+                    <option value="5">Event - Yokai (Good)</option>
+                    <option value="6">Event - Yokai (Bad)</option>
+                    <option value="7">Event - Natural Disaster (Bad)</option>
+                    <option value="8">Event - Open Ended (Good)</option>
+                    <option value="9">Event - Open Ended (Bad)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Card Header</label>
+                <input type="text" placeholder="Card Header" />
+            </div>
+            <div class="form-group">
+                <label>Card Title</label>
+                <input type="text" placeholder="Card Title" />
+            </div>
+            <div class="form-group">
+                <label>Card Description</label>
+                <textarea placeholder="Card Description"></textarea>
+            </div>
+            <div class="form-group">
+                <label>Card Lumber Point</label>
+                <input type="number" min="0" value="0" />
+            </div>
+            <div class="form-group">
+                <label>Card Image (Ideally a square image of 310x310)</label>
+                <input type="file" />
+            </div>
+        </form>
+        <div class="image-panel">
+            <div class="image-display">
+                <img src="" alt="Preview will appear here" id="preview-image">
+            </div>
+            <p class="instruction">Take a screenshot of your final card design :)</p>
+        </div>
+    </div>
+    <footer>
+        <script src="js/javascript.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    </footer>
+</body>
+
+</html>
