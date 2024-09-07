@@ -35,12 +35,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (cardType >= 0 && cardType < cardTemplates.length) {
             imageDisplay.classList.add(cardTemplates[cardType]);
-
-            const selectedOption = cardTypeSelect.options[cardTypeSelect.selectedIndex].text;
+            
             const headerOverlay = document.querySelector('.header-overlay');
     
             if (headerOverlay) {
-                headerOverlay.style.color = selectedOption.includes('(Bad)') ? 'white' : '#1c1d1e';
+                const selectedIndex = cardTypeSelect.selectedIndex;
+                headerOverlay.style.color = [5, 6, 8].includes(selectedIndex) ? 'white' : '#1c1d1e';
             }
         }
     }
@@ -118,6 +118,13 @@ document.addEventListener('DOMContentLoaded', () => {
             overlay = document.createElement('div');
             overlay.className = className;
             imageDisplay.appendChild(overlay);
+        }
+        
+        const headerOverlay = document.querySelector('.header-overlay');
+    
+        if (headerOverlay) {
+            const selectedIndex = cardTypeSelect.selectedIndex;
+            headerOverlay.style.color = [5, 6, 8].includes(selectedIndex) ? 'white' : '#1c1d1e';
         }
         
         overlay.textContent = text;
