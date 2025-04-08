@@ -606,8 +606,12 @@ a.cta-block:hover {
 }
 
 @media screen and (max-width: 1500px) {
+    main header h1 {
+        font-size: 3.5em;
+    }
+
     body {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .wrapper {
@@ -625,7 +629,7 @@ a.cta-block:hover {
 
 @media screen and (max-width: 1050px) {
     main header h1 {
-        font-size: 3.5em;
+        font-size: 3.25em;
     }
 
     main header p,
@@ -651,12 +655,13 @@ a.cta-block:hover {
 }
 
 @media screen and (max-width: 900px) {
+
     .hamburger-menu {
         display: block;
     }
 
     main header h1 {
-        font-size: 3em;
+        font-size: 2.75em;
     }
 
     main header {
@@ -749,11 +754,7 @@ a.cta-block:hover {
 
 @media screen and (max-width: 760px) {
     main header h1 {
-        font-size: 2.5em;
-    }
-
-    main header {
-        padding: 1em 1em 0 1em;
+        font-size: 2.3em;
     }
 
     main header p,
@@ -778,7 +779,7 @@ a.cta-block:hover {
 
 @media screen and (max-width: 660px) {
     main header h1 {
-        font-size: 2.25em;
+        font-size: 2.1em;
     }
 
     main header p,
@@ -818,7 +819,7 @@ a.cta-block:hover {
 
     main header h1,
     .subpage header h3 {
-        font-size: 2.15em;
+        font-size: 1.8em;
     }
 
     main header p {
@@ -830,18 +831,22 @@ a.cta-block:hover {
     }
 }
 
-@media screen and (max-width: 560px) {
-
-    main header h1,
-    .subpage header h3 {
-        font-size: 2em;
-    }
-}
-
 @media screen and (max-width: 525px) {
 
     main header h1,
     .subpage header h3 {
-        font-size: 1.8em;
+        font-size: 1.75em;
+    }
+
+    main header p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    main header h1,
+    .subpage header h3 {
+        font-size: 1.6em;
     }
 }
