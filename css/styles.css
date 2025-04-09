@@ -658,7 +658,7 @@ a.cta-block:hover {
         font-size: 3.25em;
     }
 
-    .project-section blockquote {
+    .project-section blockquote, .text-block h3 {
         font-size: 1.1em;
     }
 
@@ -692,6 +692,10 @@ a.cta-block:hover {
 
     main header h1 {
         font-size: 2.75em;
+    }
+
+    .text-block h3 {
+        font-size: 1em;
     }
 
     main header p,
