@@ -291,7 +291,8 @@ section {
     transition: all 0.05s ease-in;
 }
 
-.text-block:hover .hyperlink {
+.text-block:hover .hyperlink,
+a.hyperlink:hover {
     color: #149df8;
 }
 
@@ -300,10 +301,13 @@ section {
     margin-top: 2em;
 }
 
-.text-block .hyperlink {
+a.hyperlink {
     color: #2980B9;
-    display: inline-block;
     text-decoration: underline;
+}
+
+.text-block .hyperlink {
+    display: inline-block;
 }
 
 .text-block .hyperlink,
@@ -323,9 +327,13 @@ section {
     gap: 1em;
 }
 
+.text-block-container .single-block {
+    flex: 1;
+}
+
 .text-block {
     border-radius: 0.5em;
-    flex: 0 0 calc(50% - 1em);
+    flex: 0 0 calc(50% - 0.5em);
 }
 
 .text-block a,
@@ -504,6 +512,10 @@ section {
     padding: 2em 0 0 0;
 }
 
+.sideproject .project-intro .intro-content {
+    background-color: #F8F8FA;
+}
+
 body.subpage section.project-section .project-wrapper {
     max-width: 960px;
 }
@@ -515,6 +527,19 @@ body.subpage section.project-section .project-wrapper {
 .project-section p,
 .project-section h3 {
     margin-bottom: 1em;
+}
+
+.project-section blockquote {
+    margin-bottom: 1em;
+    font-size: 1.333em;
+    border-left: 0.333em solid #2980B9;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.project-section blockquote p {
+    margin-bottom: 0;
+    color: #2980B9;
 }
 
 figure img {
@@ -530,6 +555,7 @@ figure figcaption {
 .project-section ol {
     list-style-type: decimal;
     margin-left: 2em;
+    margin-bottom: 1em;
 }
 
 a.cta-block {
@@ -608,10 +634,6 @@ a.cta-block:hover {
 @media screen and (max-width: 1500px) {
     main header h1 {
         font-size: 3.5em;
-    }
-
-    body {
-        font-size: 15px;
     }
 
     .wrapper {
@@ -693,6 +715,12 @@ a.cta-block:hover {
 
     nav {
         padding: 1em 0;
+    }
+
+    .list-groups {
+        display: block;
+        column-count: 2;
+        column-gap: 1em;
     }
 
     .menu-close-cta {
@@ -844,9 +872,29 @@ a.cta-block:hover {
 }
 
 @media screen and (max-width: 500px) {
+    body {
+        font-size: 15px;
+    }
 
     main header h1,
     .subpage header h3 {
         font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    main header h1,
+    .subpage header h3 {
+        font-size: 1.5em;
+    }
+
+    main header p {
+        font-size: 0.9em;
+    }
+
+    .wrapper,
+    .project-wrapper {
+        min-width: 400px;
     }
 }
