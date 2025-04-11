@@ -11,6 +11,32 @@ $(document).ready(function () {
         $('body').removeClass('danmaku-open');
     });
 
+    $(window).on('scroll', function () {
+        const projectTop = $('.project-body').offset().top;
+        const scrollTop = $(window).scrollTop();
+
+        if (scrollTop >= projectTop) {
+            $('body').addClass('sticky-table');
+        } else {
+            $('body').removeClass('sticky-table');
+        }
+    });
+
+    $('.table-of-contents .hyperlink').on('click', function () {
+        const $li = $(this).parent();
+        const $ul = $li.parent();
+
+        const liOffset = $li.offset().left;
+        const ulOffset = $ul.offset().left;
+        const liWidth = $li.outerWidth();
+        const ulWidth = $ul.outerWidth();
+
+        const currentScroll = $ul.scrollLeft();
+        const offsetToCenter = (liOffset - ulOffset) - (ulWidth / 2) + (liWidth / 2);
+
+        $ul.animate({ scrollLeft: currentScroll + offsetToCenter }, 300);
+    });
+
     const skills = [
         "UI/UX Design",
         "UXデザイン",
