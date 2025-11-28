@@ -1,6 +1,23 @@
-$(document).ready(function(){$(".hamburger-menu").length&&$(".hamburger-menu").on("click",function(){$("body").toggleClass("menu-open")}),$(".danmaku-toggle").length&&($(".danmaku-toggle").on("mouseenter",function(){$("body").addClass("danmaku-open")}),$(".danmaku-toggle").on("mouseleave",function(){$("body").removeClass("danmaku-open")})),$(".project-body").length&&$(window).on("scroll",function(){let e=$(".project-body").offset().top,t=$(window).scrollTop();t>=e?$("body").addClass("sticky-table"):$("body").removeClass("sticky-table")}),$(".table-of-contents .hyperlink").length&&$(".table-of-contents .hyperlink").on("click",function(e){e.preventDefault();let t=$(this).attr("href"),n=$(t);n.length&&$("html, body").animate({scrollTop:n.offset().top},500);let o=$(this).parent(),l=o.parent(),a=o.offset().left,i=l.offset().left,r=o.outerWidth(),s=l.outerWidth(),d=l.scrollLeft();l.animate({scrollLeft:d+(a-i-s/2+r/2)},300)}),$(".cta-block.to-top").length&&$(".cta-block.to-top").on("click",function(e){e.preventDefault(),$("html, body").animate({scrollTop:0},500)});let e=["UI/UX Design","UXデザイン","Iterative Design","Prototyping & Wireframing","プロトタイピング","ワイヤーフレーム作成","User Flows","Usability Testing","ユーザビリティテスト","User Interviews","ユーザーインタビュー","Affinity Mapping","親和図","Figma","Adobe Illustrator","HTML","CSS","JavaScript","Game Development","ゲーム開発","Game Design","ゲームデザイン","Unity3D","C#","Blender","CAD Drawing","CAD図面作成","Digital Art","イラスト","Video Editing","動画編集","Building PCs","自作PC","Assembling Keyboards","キーボード組み立て"],t=new Set;$("#danmaku-container").length&&setInterval(function n(){let o=$("#danmaku-container");if(!o.length)return;let l=e.filter(e=>!t.has(e));if(0===l.length)return;let a=l[Math.floor(Math.random()*l.length)];t.add(a);let i=10*Math.random()+10,r=$("<div></div>",{class:"danmaku",text:a,css:{top:`${90*Math.random()}%`,fontSize:`${1*Math.random()+2}em`,color:`hsl(${360*Math.random()}, 80%, 70%)`,fontWeight:"bold",textShadow:`
-                    -1px -1px 0 black,
-                     1px -1px 0 black,
-                    -1px  1px 0 black,
-                     1px  1px 0 black
-                `,animationDuration:`${i}s`}});o.append(r),setTimeout(()=>{r.remove(),t.delete(a)},1e3*i)},700)});
+$(document).ready(function () {
+    $('.close').click(function () {
+        $(this).parent().parent().parent().parent().hide();
+        $('body').removeClass('modal-open')
+    });
+
+    const MODAL_ID = ['mrms', 'ttts', 'ark', 'gAAAme', 'vandetta', 'scorchborne', 'tjthink', 'sifrjp', 'codefest', 'bobhafiz', 'katrinachandy', 'jmcustomized', 'homecooking', 'nusgdg']
+
+    MODAL_ID.forEach(item => {
+        $('.' + item).click(function () {
+            $('#' + item).show();
+            $('body').addClass('modal-open')
+        });
+    })
+
+    $('.gallery-images > .swap-img').click(function () {
+        $(this).parent().parent().find('.gallery-selected-image').html($(this).clone())
+    });
+
+    $('.video').click(function () {
+        $(this).parent().parent().parent().find('.gallery-selected-image').html($(this).find('iframe').clone());
+    })
+});

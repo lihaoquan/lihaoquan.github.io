@@ -3,155 +3,936 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="description" content="I am Li Haoquan, a UX Designer. This is my portfolio.">
+    <meta name="description" content="I am Li Haoquan, I develop and design games and websites. This is my portfolio.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Li Haoquan Portfolio</title>
+    <title>Li Haoquan's Portfolio</title>
+    <link rel="canonical" href="http://lihaoquan.co">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit&family=Pixelify+Sans&display=swap" rel="stylesheet">
-    <link rel="canonical" href="http://lihaoquan.com">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Noto+Serif:wght@700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <nav>
-            <a href="#"><img src="img/logo.svg" alt="" /></a>
-            <div class="navigation-container">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="https://www.linkedin.com/in/li-haoquan/" target="_blank">LinkedIn</a></li>
-                </ul>
-                <div class="hamburger-menu">
-                    <img class="menu-close-cta" src="img/close.svg" alt="" />
-                    <img class="menu-open-cta" src="img/hamburger-menu.svg" alt="" />
+        <div class="overlay"></div>
+        <div id="introduction">
+            <img id="brand" src="img/logo.svg" alt="Li Haoquan's Portfolio">
+            <h1>Li Haoquan's Portfolio</h1>
+            <p>I studied Information Technology (Game Development Specialisation) in Singapore Polytechnic.</p>
+            <p>I am currently developing my skills for <strong class="blue">digital products</strong> with a focus on
+                <strong class="blue">UI/UX design.</strong>
+            </p>
+            <div class="icon-row row">
+                <a href="https://sg.linkedin.com/in/li-haoquan-6a51b8149" target="_blank"><img src="img/linkedin.png"
+                        alt="LinkedIn - Li Haoquan" /></a>
+                <a href="https://github.com/lihaoquan" target="_blank"><img src="img/github.png"
+                        alt="GitHub - Li Haoquan" /></a>
+                <a href="https://sketchfab.com/lihaoquan" target="_blank"><img src="img/sketchfab.png"
+                        alt="SketchFab - Li Haoquan" /></a>
+            </div>
+        </div>
+        <div class="projects">
+            <h3><img src="img/web-development.svg" alt="UX Designer" />UX Design Projects</h3>
+            <p class="title">Here are some of my UX Design case studies.</p>
+            <div class="row dual-row">
+                <div class="row-item trigger nusgdg">
+                    <img src="img/nusgdg-elaborate.png" alt="NUSGDG - Website Redesign" />
+                    <p class="tag">December 2023</p>
+                    <h2>NUSGDG Website Redesign</h2>
+                    <p>UX Design &amp; Case Study &bull; School Project</p>
+                    <p class="description">How might we clearly showcase the Game Development club’s activities and
+                        learning opportunities to attract and engage new members?</p>
+                </div>
+                <div class="row-item trigger homecooking last">
+                    <img src="img/home-cooking-elaborate.png" alt="Homecooking - UX Design" />
+                    <p class="tag">August 2023</p>
+                    <h2>CS3240 - Homecooking</h2>
+                    <p>UX Design &bull; Case Study &bull; School Project</p>
+                    <p class="description">How might we make the process of preparing home-cooked meals a less
+                        overwhelming and more pleasant experience?</p>
                 </div>
             </div>
-        </nav>
-        <main>
-            <div id="danmaku-container"></div>
-            <header>
-                <h4 class="section-title"><span class="gray-text">初めまして！</span></h4>
-                <h1>Hey, I’m Haoquan! <strong class="danmaku-toggle">(＾▽＾)ノ</strong>
-                    <span class="icon-container"><img class="danmaku-toggle" src="img/mouseover.svg" alt="" /></span>
-                    <span class="linebreak">I design
-                        thoughtful <strong class="blue-text">user experiences,</strong></span> backed by a
-                    <strong class="orange-text">technical mindset.</strong>
-                </h1>
-                <p>When I’m not designing or coding, I’m usually tinkering with a <span
-                        class="linebreak"><strong>&#x2328;&#xFE0F; custom
-                            keyboard </strong> or <strong>&#x1F5A5;&#xFE0F; PC,</strong>
-                        prototyping a <strong>&#x1F3AE;&#xFE0F; game idea,</strong></span></strong> or watching
-                    <strong>&#x1F4FA;&#xFE0F; Japanese livestreams.</strong>
-                </p>
-            </header>
-            <section>
-                <h2 class="section-title">Latest Activities <span class="gray-text">近ごろの活動</span></h2>
-                <div class="text-block-container">
-                    <div class="text-block gray-text-block">
-                        <a target="_blank" href="https://www.linkedin.com/in/li-haoquan/">
-                            <div>
-                                <h3>Internship</h3>
-                                <p class="description">I’m doing a 6-month internship with <strong>GovTech
-                                        Singapore</strong> as a <strong>UI/UX
-                                        Designer!</strong></p>
-                            </div>
-                            <p class="hyperlink">See what I’ve been working on &rarr;</p>
-                        </a>
-                    </div>
-                    <div class="text-block gray-text-block">
-                        <a href="pixelnotes.html">
-                            <div>
-                                <h3>Side Project</h3>
-                                <p class="description">I designed a <strong>logo</strong> and <strong>website</strong>
-                                    for a
-                                    <strong>Virtual
-                                        YouTuber
-                                        group.</strong>
-                                </p>
-                            </div>
-                            <p class="hyperlink">Check out the project &rarr;</p>
-                        </a>
-                    </div>
+        </div>
+        <div class="projects">
+            <h3><img src="img/web-development.svg" alt="Web Developer and Designer" />Web Development Projects
+                (Freelance/Full-time)</h3>
+            <p class="title">I also provide freelance Web Design &amp; Development services.</p>
+            <div class="row">
+                <div class="row-item trigger jmcustomized">
+                    <img src="img/jmcustomized.png" alt="Web Design Concept - JMCustomized" />
+                    <p class="tag">April 2022</p>
+                    <h2>JMCustomized</h2>
+                    <p>Web Design &bull; Concept &bull; Freelance</p>
+                    <p class="description">A website design concept for JMCustomized, a computer equipment vendor who
+                        operates a Shopify webstore based in China.</p>
                 </div>
-            </section>
-            <section class="past-projects">
-                <h2 class="section-title">Past Projects <span class="gray-text">過去のプロジェクト</span></h2>
-                <div class="text-block-container">
-                    <div class="text-block blue-text-block">
-                        <a href="homecooking.html">
-                            <div class="title-section">
-                                <h3>CS3240 Interaction Design</h3>
-                                <h2>Homecooking</h2>
-                                <p class="description">How might we make the process of preparing home-cooked meals a
-                                    less overwhelming and
-                                    more
-                                    pleasant experience?</p>
-                            </div>
-                            <div class="image-section">
-                                <img src="img/cs3240-homecooking.png" alt="" />
-                            </div>
-                        </a>
-                    </div>
-                    <div class="text-block blue-text-block">
-                        <a href="nusgdg.html">
-                            <div class="title-section">
-                                <h3>Web Design</h3>
-                                <h2>NUSGDG Website Redesign</h2>
-                                <p class="description">How might we clearly showcase the Game Development club’s
-                                    activities and learning
-                                    opportunities to attract and engage new members?</p>
-                            </div>
-                            <div class="image-section">
-                                <img src="img/nusgdg-website-redesign.png" alt="" />
-                            </div>
-                        </a>
-                    </div>
-                    <div class="text-block blue-text-block">
-                        <a href="ar-maintenance-simulator.html">
-                            <div class="title-section">
-                                <h3>Polytechnic FYP</h3>
-                                <h2>AR Maintenance Simulator</h2>
-                                <p class="description">How might we help the RSAF train flight-line crew efficiently
-                                    with Augmented Reality?
-                                </p>
-                            </div>
-                            <div class="image-section">
-                                <img src="img/ar-maintenance-simulator.png" alt="" />
-                            </div>
-                        </a>
-                    </div>
-                    <div class="text-block blue-text-block wip-block">
-                        <a class="wip">
-                            <div class="title-section">
-                                <h3>Product Design</h3>
-                                <h2>JMCustomized (WIP)</h2>
-                                <p class="description">How might we help users understand a complicated product more
-                                    easily?</p>
-                            </div>
-                            <div class="image-section">
-                                <img src="img/jmcustomized.png" alt="" />
-                            </div>
-                        </a>
-                    </div>
+                <div class="row-item trigger katrinachandy">
+                    <img src="img/katrina-chandy.png" alt="Wordpress Theme Development - Katrina Chandy" />
+                    <p class="tag">July 2021</p>
+                    <h2>Katrina Chandy Portfolio</h2>
+                    <p>Web Design &amp; Development &bull; Wordpress Theme &bull; Freelance</p>
+                    <p class="description">A Wordpress portfolio theme built in PHP for Katrina Chandy, who is a Student
+                        Illustrator, to aid in her in attaining a spot in Nanyang Polytechnic.</p>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <h3>UX Designer in progress—sharpening skills and <span class="linebreak">soaking up experience through
-                    internships!</span></h3>
-            <div class="social-links">
-                <a target="_blank" href="https://www.linkedin.com/in/li-haoquan/"><img src="img/linkedin.svg"
-                        alt="" /></a>
-                <a target="_blank" href="https://github.com/lihaoquan"><img src="img/github.svg" alt="" /></a>
-                <a target="_blank" href="mailto:lihaoquan.dev@gmail.com"><img src="img/email.svg" alt="" /></a>
+                <div class="row-item trigger bobhafiz">
+                    <img src="img/bob-hafiz.png" alt="Web Design - Bob Hafiz" />
+                    <p class="tag">August 2020</p>
+                    <h2>Bob Hafiz Personal Website</h2>
+                    <p>Web Design &bull; Freelance</p>
+                    <p class="description">Personal website design for Bob Hafiz who is a professional Public Speaker.
+                    </p>
+                </div>
             </div>
-            <p>Copyright &copy; 2025 Li Haoquan</p>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-            <script src="js/javascript.js"></script>
-        </footer>
+            <div class="row-divider"></div>
+            <div class="row">
+                <div class="row-item trigger codefest">
+                    <img src="img/code-fest.png" alt="Web Design and Development - codefest.sg" />
+                    <p class="tag">September 2019</p>
+                    <h2>CodeFest 2019</h2>
+                    <p>Web Design &amp; Development &bull; Full-time/Internship</p>
+                    <p class="description">When I was a full-time developer at Robot Coding Academy (September 2019 -
+                        July 2020), I created an event
+                        website for the company. It is a hackathon event organised for kids. This event was recently
+                        renewed for 2022.
+                    </p>
+                </div>
+                <div class="row-item trigger tjthink">
+                    <img src="img/tj-think.png" alt="Web Development and Design - tj-think.co.jp" />
+                    <p class="tag">August 2016</p>
+                    <h2>Techno Johou Think</h2>
+                    <p>Web Design &amp; Development &bull; Freelance</p>
+                    <p class="description">I renewed their website design to give it a more modern feel and make it
+                        truly reflect the company’s quality of service.</p>
+                </div>
+                <div class="row-item trigger sifrjp last">
+                    <img src="img/sifr-japan.png" alt="Web Design and Development - japan.sifr.me" />
+                    <p class="tag">October 2014 (Design Updated in 2016)</p>
+                    <h2>Sifr Japan</h2>
+                    <p>Web Design &amp; Development &bull; Freelance</p>
+                    <p class="description">This website is created for my japanese programming mentor who wanted to
+                        write articles about Japan. I had to create a back-end system for my mentor to upload &amp; edit
+                        articles in addition to the logo and the appearance of the website. The website design was
+                        updated in 2016, when I gained more graphics design knowledge.</p>
+                </div>
+            </div>
+        </div>
+        <div class="projects">
+            <h3><img src="img/game-development.svg" alt="game developer and designer" />Game Development Projects
+                (Singapore Polytechnic)</h3>
+            <p class="title">I create games in Unity Engine (C#) and do 3D modelling in Blender.</p>
+            <div class="row">
+                <div class="row-item trigger mrms">
+                    <img src="img/mixed-reality-maintenance-simulator.png"
+                        alt="Mixed Reality Maintenance Simulator - AR Simulation" />
+                    <p class="tag">May 2019 - FINAL YEAR PROJECT</p>
+                    <h2>Mixed Reality Maintenance Simulator</h2>
+                    <p>Augmented Reality Simulation Game &bull; Team of 4</p>
+                    <p class="description">A client project from Singapore's Defence Science and Technology Agency. A
+                        simulator to train RSAF personnels in the maintenance of aircraft during launch sequence. Built
+                        for Microsoft Hololens.</p>
+                </div>
+                <div class="row-item trigger ttts">
+                    <img src="img/tower-to-the-skies.png" alt="Tower to The Skies - Fantasy RPG" />
+                    <p class="tag">August 2018</p>
+                    <h2>Tower to The Skies</h2>
+                    <p>Fantasy Role-playing Game &bull; Team of 3</p>
+                    <p class="description">A 3rd person perspective RPG game where players have to clear 20 floors of a
+                        magical tower by defeating enemies and solving puzzles.</p>
+                </div>
+                <div class="row-item trigger ark">
+                    <img src="img/ark.png" alt="A.R.K - 3rd person Stealth Game" />
+                    <p class="tag">July 2018</p>
+                    <h2>A.R.K</h2>
+                    <p>Third-person Stealth Game &bull; Team of 1</p>
+                    <p class="description">A third person sci fi game with 2 missions that players can complete. Players
+                        can choose to go through the mission stealthily or engage in battles.</p>
+                </div>
+            </div>
+            <div class="row-divider"></div>
+            <div class="row">
+                <div class="row-item trigger gAAAme">
+                    <img src="img/gAAAme.png" alt="gAAAme - Table Top Card Game" />
+                    <p class="tag">June 2018</p>
+                    <h2>gAAAme</h2>
+                    <p>Table Top Card Game &bull; Team of 2</p>
+                    <p class="description">Players role-play as game companies to compete with each other to gain player
+                        base by using cards with different effects. The first player that reaches 100,000 player base
+                        wins.</p>
+                </div>
+                <div class="row-item trigger vandetta">
+                    <img src="img/vandetta-1337.png" alt="gAAAme - Table Top Card Game" />
+                    <p class="tag">May 2018</p>
+                    <h2>Vandetta 1337: The RTS</h2>
+                    <p>Single Player Real-time Strategy &bull; Team of 2</p>
+                    <p class="description">A cyber warefare real time strategy simulator for players to explore the
+                        world of hacking without the need of technical knowledge.</p>
+                </div>
+                <div class="row-item trigger scorchborne last">
+                    <img src="img/scorchborne.png" alt="Scorchborne - 2D Role-playing" />
+                    <p class="tag">April 2018</p>
+                    <h2>Scorchborne</h2>
+                    <p>2D Role-playing &bull; Team of 1</p>
+                    <p class="description">A simple RPG sidescroller where the player plays as the villain of the game
+                        and terrorizes the town. A small spin-off from the usual setting where players are posed as
+                        heroes.</p>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="modal" id="mrms">
+        <div class="modal-inner clearfix">
+            <div class="modal-header clearfix">
+                <div class="modal-head-left left">
+                    <p class="tag">May 2019</p>
+                    <h3>Mixed Reality Maintenance Simulator</h3>
+                </div>
+                <div class="modal-head-right right">
+                    <img class='close' src="img/close.svg" alt="Close Mixed Reality Maintenance Simulator Modal" />
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-left left">
+                    <div class="gallery-selected-image">
+                        <iframe src="https://www.youtube.com/embed/yzsEQn1ey1A" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="gallery-images clearfix">
+                        <div class="img-wrapper video">
+                            <iframe src="https://www.youtube.com/embed/yzsEQn1ey1A" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <img src="img/mrms-thumbnail.png" alt="Augmented Reality Game Trailer" />
+                        </div>
+                        <img src="img/mrms-featured-article.png" class="swap-img"
+                            alt="Featured in Singapore Polytechnic Magazine" />
+                    </div>
+                    <div class="game-info">
+                        <p class="tag">Game Concept</p>
+                        <p>The Republic of Singapore Air Force (RSAF) needs a better way to train its Flight Line Crew.
+                            They want a way to provide trainees with high level of fidelity, through kinaesthetic
+                            learning and functional realism. Therefore, our idea was to leverage mixed reality
+                            technology (Microsoft Hololens) with the combination of game simulation medium to
+                            efficiently train their trainees.</p>
+                        <p class="tag">Key Responsibilities</p>
+                        <p>Project Management (SCRUM, weekly sprint, meetings)</p>
+                        <p>Network Server UI</p>
+                        <p>Gameplay Programming</p>
+                    </div>
+                </div>
+                <div class="modal-body-right left">
+                    <p class="tag">Title</p>
+                    <h4>Mixed Reality Maintenance Simulator</h4>
+                    <p class="tag">Genre</p>
+                    <h4>Augmented Reality</h4>
+                    <p class="tag">Date</p>
+                    <h4>May 2019</h4>
+                    <p class="tag">Platform</p>
+                    <h4>Microsoft Hololens</h4>
+                    <p class="tag">Tools</p>
+                    <ul>
+                        <li>Unity Engine</li>
+                        <li>Blender</li>
+                        <li>Microsoft Hololens</li>
+                    </ul>
+                    <p class="tag">Team Members (4)</p>
+                    <div class="person">
+                        <h4>Li Haoquan</h4>
+                        <p class="tag">Diploma in Information Technology</p>
+                        <p>Project Manager, Programmer</p>
+                    </div>
+                    <div class="person">
+                        <h4>Chua Yi Kai</h4>
+                        <p class="tag">Diploma in Information Technology</p>
+                        <p>Network Server Programmer</p>
+                    </div>
+                    <div class="person">
+                        <h4>Tan Ensheng Onsho</h4>
+                        <p class="tag">Diploma in Information Technology</p>
+                        <p>Level Designer, Programmer</p>
+                    </div>
+                    <div class="person">
+                        <h4>Aloysius Tay Hui Ming</h4>
+                        <p class="tag">Diploma in Information Technology</p>
+                        <p>Interaction Designer, Programmer</p>
+                    </div>
+                    <!-- <a href="" class="big-cta">Download Game &rarr;</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="ttts">
+        <div class="modal-inner clearfix">
+            <div class="modal-header clearfix">
+                <div class="modal-head-left left">
+                    <p class="tag">August 2018</p>
+                    <h3>Tower to The Skies</h3>
+                </div>
+                <div class="modal-head-right right">
+                    <img class='close' src="img/close.svg" alt="Close Tower to The Skies Modal" />
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-left left">
+                    <div class="gallery-selected-image">
+                        <iframe src="https://www.youtube.com/embed/N13boHYL_1Y" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="gallery-images clearfix">
+                        <div class="img-wrapper video">
+                            <iframe src="https://www.youtube.com/embed/N13boHYL_1Y" frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                            <img src="img/ttts-thumbnail.png" alt="Game Trailer" />
+                        </div>
+                        <img src="img/tower-to-the-skies-elaborate.png" class="swap-img" alt="3D RPG Game Creation" />
+                        <img src="img/tower-to-the-skies-characters.png" class="swap-img"
+                            alt="Tower to The Skies Characters" />
+                    </div>
+                    <div class="game-info">
+                        <p class="tag">Game Concept</p>
+                        <p>A 3rd person perspective RPG game where players have to clear 20 floors of a magical tower by
+                            defeating enemies and solving puzzles. Each 4 floors will feature a different element,
+                            starting with nature, fire, water and lastly wind. There are also bosses awaiting players at
+                            the last floor of each element to challenge the player's skills.</p>
+                        <p class="tag">Game Storyline</p>
+                        <p>In hopes of restoring her hometown, Selena travels to the rumoured magical tower. The tower
+                            will grant whoever manages to reach the top of it a wish. Selena's wish is to restore her
+                            hometown and stop the abuse of magic. While travelling up the tower, Selena will face many
+                            enemies and puzzles that she will have to overcome.</p>
+                        <p class="tag">Key Responsibilities</p>
+                        <p>Character Controller Programming</p>
+                        <p>Character Design / Modelling</p>
+                        <p>Enemy AI Programming</p>
+                    </div>
+                </div>
+                <div class="modal-body-right left">
+                    <p class="tag">Title</p>
+                    <h4>Tower to The Skies</h4>
+                    <p class="tag">Genre</p>
+                    <h4>Fantasy Role-playing Game</h4>
+                    <p class="tag">Date</p>
+                    <h4>August 2018</h4>
+                    <p class="tag">Platform</p>
+                    <h4>PC</h4>
+                    <p class="tag">Tools</p>
+                    <ul>
+                        <li>Unity Engine</li>
+                        <li>Blender</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Paint Tool SAI</li>
+                    </ul>
+                    <p class="tag">Team Members (3)</p>
+                    <div class="person">
+                        <h4>Li Haoquan</h4>
+                        <p class="tag">Diploma in Information Technology</p>
+                        <p>Programmer, Game Art</p>
+                    </div>
+                    <div class="person">
+                        <h4>Chua Yi Kai</h4>
+                        <p class="tag">Diploma in Information Technology</p>
+                        <p>Programmer, Systems Designer</p>
+                    </div>
+                    <div class="person">
+                        <h4>Jarran Tan Yan Zhi</h4>
+                        <p class="tag">Diploma in Information Technology</p>
+                        <p>Level Designer, 3D Modeller</p>
+                    </div>
+                    <!-- <a href="" class="big-cta">Download Game &rarr;</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="ark">
+        <div class="modal-inner clearfix">
+            <div class="modal-header clearfix">
+                <div class="modal-head-left left">
+                    <p class="tag">July 2018</p>
+                    <h3>A.R.K</h3>
+                </div>
+                <div class="modal-head-right right">
+                    <img class='close' src="img/close.svg" alt="Close A.R.K Modal" />
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-left left">
+                    <div class="gallery-selected-image">
+                        <img src="img/ark-elaborate.png" alt="Stealth Game Development" />
+                    </div>
+                    <div class="game-info">
+                        <p class="tag">Game Concept</p>
+                        <p>A third person sci fi game with 2 missions that players can complete. Players can choose to
+                            go through the mission stealthily or engage in battles.</p>
+                        <p>When undetected by enemies, players can choose to assasinate them, which is a one-shot
+                            ability triggered as a quick-time event.</p>
+                        <p class="tag">Key Responsibilities</p>
+                        <p>3D Props Modelling</p>
+                        <p>Animation Blending</p>
+                        <p>Game Programming</p>
+                    </div>
+                </div>
+                <div class="modal-body-right left">
+                    <p class="tag">Title</p>
+                    <h4>A.R.K</h4>
+                    <p class="tag">Genre</p>
+                    <h4>Third-person Stealth Mission</h4>
+                    <p class="tag">Date</p>
+                    <h4>July 2018</h4>
+                    <p class="tag">Platform</p>
+                    <h4>Desktop PC</h4>
+                    <p class="tag">Tools</p>
+                    <ul>
+                        <li>Unity Engine</li>
+                        <li>Blender</li>
+                    </ul>
+                    <p class="tag">Team Members (1)</p>
+                    <div class="person">
+                        <h4>Li Haoquan</h4>
+                        <p class="tag">Diploma in Information Technology</p>
+                        <p>Programmer, 3D Modeller</p>
+                    </div>
+                    <!-- <a href="" class="big-cta">Download Game &rarr;</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="gAAAme">
+        <div class="modal-inner clearfix">
+            <div class="modal-header clearfix">
+                <div class="modal-head-left left">
+                    <p class="tag">June 2018</p>
+                    <h3>gAAAme</h3>
+                </div>
+                <div class="modal-head-right right">
+                    <img class='close' src="img/close.svg" alt="Close gAAAme Modal" />
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-left left">
+                    <div class="gallery-selected-image">
+                        <img src="img/gAAAme.png" alt="Card Game Development" />
+                    </div>
+                    <div class="game-info">
+                        <p class="tag">Game Concept</p>
+                        <p>Inspired by PUBG and Fornite's competition, this card game is centered on game companies
+                            competing with each other to gain popularity amongst players.</p>
+                        <p>There are 4 main card types. The Feature card, which is features that game companies (the
+                            players) can add to their game to gain player base (in the end player with the highest
+                            playerbase wins).</p>
+                        <p>The Trap card, when drawn, will give negative effects to the player. The Action cards, which
+                            players can use to perform actions to compete with other players for their player base.</p>
+                        <p>And lastly, the Player card, which represents the quantity of players each game company has,
+                            which comes in 2,000, 5,000 and 10,000.</p>
+                        <p class="tag">Key Responsibilities</p>
+                        <p>Card Graphics Design</p>
+                        <p>Gameplay Design</p>
+                    </div>
+                </div>
+                <div class="modal-body-right left">
+                    <p class="tag">Title</p>
+                    <h4>gAAAme</h4>
+                    <p class="tag">Genre</p>
+                    <h4>Table Top Card Game</h4>
+                    <p class="tag">Date</p>
+                    <h4>June 2018</h4>
+                    <p class="tag">Platform</p>
+                    <h4>Physical Cards</h4>
+                    <p class="tag">Tools</p>
+                    <ul>
+                        <li>Adobe Illustrator</li>
+                    </ul>
+                    <p class="tag">Team Members (2)</p>
+                    <div class="person">
+                        <h4>Li Haoquan</h4>
+                        <p class="tag">Diploma in Information Technology</p>
+                        <p>Game Art, Gameplay Design</p>
+                    </div>
+                    <div class="person">
+                        <h4>Chua Yi Kai</h4>
+                        <p class="tag">Diploma in Information Technology</p>
+                        <p>Gameplay Design</p>
+                    </div>
+                    <!-- <a href="" class="big-cta">Download Game &rarr;</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="vandetta">
+        <div class="modal-inner clearfix">
+            <div class="modal-header clearfix">
+                <div class="modal-head-left left">
+                    <p class="tag">May 2018</p>
+                    <h3>Vandetta 1337: The RTS</h3>
+                </div>
+                <div class="modal-head-right right">
+                    <img class='close' src="img/close.svg" alt="Close Vandetta 1337 Modal" />
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-left left">
+                    <div class="gallery-selected-image">
+                        <img src="img/vandetta-1337-the-rts.jpg" alt="Vandetta 1337 Game Menu" />
+                    </div>
+                    <div class="gallery-images clearfix">
+                        <img src="img/vandetta-1337-the-rts.jpg" class="swap-img" alt="Vandetta 1337 On Google Play" />
+                        <img src="img/vandetta-1337-the-rts-gameplay.png" class="swap-img"
+                            alt="Vandetta 1337 Gameplay" />
+                    </div>
+                    <div class="game-info">
+                        <p class="tag">Game Concept</p>
+                        <p>1337 Vandetta is a single player Cyber Warfare Simulator. Players have to defend their
+                            systems and take down their opponents through various methods on the cyber medium.</p>
+                        <p>Players control their character to navigate around a board that represents the internet, to
+                            set up their assets such as computers, servers, and database to generate revenue as well as
+                            use them as weapons to attack their opponent through the use of viruses and attacks.</p>
+                        <p>In addition, players have to defend their existing assets through various defenses that they
+                            can choose to upgrade throughout the game.</p>
+                        <p class="tag">Key Responsibilities</p>
+                        <p>Gameplay Programming</p>
+                        <p>Graphics Design</p>
+                        <p>Game Design</p>
+                    </div>
+                </div>
+                <div class="modal-body-right left">
+                    <p class="tag">Title</p>
+                    <h4>Vandetta 1337: The RTS</h4>
+                    <p class="tag">Genre</p>
+                    <h4>Single Player Real-time Strategy</h4>
+                    <p class="tag">Date</p>
+                    <h4>May 2018</h4>
+                    <p class="tag">Platform</p>
+                    <h4>Android Phone</h4>
+                    <p class="tag">Tools</p>
+                    <ul>
+                        <li>Unity Engine</li>
+                        <li>Blender</li>
+                        <li>Android Studios</li>
+                    </ul>
+                    <p class="tag">Team Members (2)</p>
+                    <div class="person">
+                        <h4>Li Haoquan</h4>
+                        <p class="tag">Diploma in Information Technology</p>
+                        <p>Graphics Design, Programmer</p>
+                    </div>
+                    <div class="person">
+                        <h4>Chua Yi Kai</h4>
+                        <p class="tag">Diploma in Information Technology</p>
+                        <p>Programmer</p>
+                    </div>
+                    <!-- <a href="" class="big-cta">Download Game &rarr;</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="scorchborne">
+        <div class="modal-inner clearfix">
+            <div class="modal-header clearfix">
+                <div class="modal-head-left left">
+                    <p class="tag">April 2018</p>
+                    <h3>Scorchborne</h3>
+                </div>
+                <div class="modal-head-right right">
+                    <img class='close' src="img/close.svg" alt="Close Scorchborne Modal" />
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-left left">
+                    <div class="gallery-selected-image">
+                        <img src="img/scorchborne-elaborate.png" alt="Scorchborne Game Menu" />
+                    </div>
+                    <div class="gallery-images clearfix">
+                        <img src="img/scorchborne-elaborate.png" class="swap-img" alt="Scorchborne Game Development" />
+                        <img src="img/scorchborne-gameplay.png" class="swap-img" alt="Scorchborne on Google Play" />
+                    </div>
+                    <div class="game-info">
+                        <p class="tag">Game Concept</p>
+                        <p>A simple RPG sidescroller where the player plays as the villain of the game. A small spin-off
+                            from the usual setting where players are posed as heroes.</p>
+                        <p class="tag">Key Responsibilities</p>
+                        <p>Gameplay Programming</p>
+                    </div>
+                </div>
+                <div class="modal-body-right left">
+                    <p class="tag">Title</p>
+                    <h4>Scorchborne</h4>
+                    <p class="tag">Genre</p>
+                    <h4>2D Role-playing</h4>
+                    <p class="tag">Date</p>
+                    <h4>April 2018</h4>
+                    <p class="tag">Platform</p>
+                    <h4>Android Phone</h4>
+                    <p class="tag">Tools</p>
+                    <ul>
+                        <li>Unity Engine</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Android Studios</li>
+                    </ul>
+                    <p class="tag">Team Members (1)</p>
+                    <div class="person">
+                        <h4>Li Haoquan</h4>
+                        <p class="tag">Diploma in Information Technology</p>
+                        <p>Programmer</p>
+                    </div>
+                    <!-- <a href="" class="big-cta">Download Game &rarr;</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="jmcustomized">
+        <div class="modal-inner clearfix">
+            <div class="modal-header clearfix">
+                <div class="modal-head-left left">
+                    <p class="tag">April 2022</p>
+                    <h3>JMCustomized</h3>
+                </div>
+                <div class="modal-head-right right">
+                    <img class='close' src="img/close.svg" alt="Close JMCustomized Modal" />
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-left left">
+                    <div class="gallery-selected-image">
+                        <img src="img/jmcustomized-elaborate.png" alt="JMCustomized Website" />
+                    </div>
+                </div>
+                <div class="modal-body-right left">
+                    <p class="tag">Title</p>
+                    <h4>JMCustomized</h4>
+                    <p class="tag">Date</p>
+                    <h4>April 2022</h4>
+                    <p class="tag">Tools</p>
+                    <ul>
+                        <li>Balsamiq Wireframes</li>
+                        <li>Adobe Illustrator</li>
+                    </ul>
+                    <p class="tag">Client Overview</p>
+                    <p>JMCustomized is a small form factor computer enclosure vendor. They are based in China and
+                        operate a Shopify
+                        webstore that serves global customers.</p>
+                    <p>This was a design proposal made for the vendor to showcase my design competencies so as to
+                        further
+                        collaborate with him on various aspects of the product.</p>
+                    <p>Some of the product package design and manual design can be seen in this <strong class="blue"><a
+                                href="https://www.instagram.com/p/Cdlfxu0BxbQ/" target="_blank">Instagram
+                                post.</a></strong></p>
+                    <p class="tag">Key Responsibilities</p>
+                    <p>Web Design</p>
+                    <p>Package Design</p>
+                    <p>Product Manual Design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="katrinachandy">
+        <div class="modal-inner clearfix">
+            <div class="modal-header clearfix">
+                <div class="modal-head-left left">
+                    <p class="tag">July 2021</p>
+                    <h3>Katrina Chandy Portfolio</h3>
+                </div>
+                <div class="modal-head-right right">
+                    <img class='close' src="img/close.svg" alt="Close Katrina Chandy Modal" />
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-left left">
+                    <div class="gallery-selected-image">
+                        <img src="img/katrina-chandy-elaborate.png" alt="Katrina Chandy Portfolio Website" />
+                    </div>
+                </div>
+                <div class="modal-body-right left">
+                    <p class="tag">Title</p>
+                    <h4>Katrina Chandy Portfolio</h4>
+                    <p class="tag">Date</p>
+                    <h4>July 2021</h4>
+                    <p class="tag">Tools</p>
+                    <ul>
+                        <li>PHP</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Adobe Illustrator</li>
+                    </ul>
+                    <p class="tag">Client Overview</p>
+                    <p>Katrina Chandy is a freelance Illustrator and a student animator at Nanyang Polytechnic.</p>
+                    <p>This website was made to serve as a supplement for her application to her Polytechnic's direct
+                        admission programme.</p>
+                    <p class="tag">Key Responsibilities</p>
+                    <p>Web Design</p>
+                    <p>Web Development</p>
+                    <p>Wordpress Theme Development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="bobhafiz">
+        <div class="modal-inner clearfix">
+            <div class="modal-header clearfix">
+                <div class="modal-head-left left">
+                    <p class="tag">August 2020</p>
+                    <h3>Bob Hafiz Personal Website</h3>
+                </div>
+                <div class="modal-head-right right">
+                    <img class='close' src="img/close.svg" alt="Close Bob Hafiz Modal" />
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-left left">
+                    <div class="gallery-selected-image">
+                        <img src="img/bob-hafiz-elaborate.png" alt="Bob Hafiz Personal Website" />
+                    </div>
+                </div>
+                <div class="modal-body-right left">
+                    <p class="tag">Title</p>
+                    <h4>Bob Hafiz Personal Website</h4>
+                    <p class="tag">Date</p>
+                    <h4>August 2020</h4>
+                    <p class="tag">Tools</p>
+                    <ul>
+                        <li>Balsamiq Wireframes</li>
+                        <li>Adobe Illustrator</li>
+                    </ul>
+                    <p class="tag">Client Overview</p>
+                    <p>Bob Hafiz is a professional Public Speaker who conducted workshops for various schools &amp;
+                        organisations.</p>
+                    <p>His personal website serves as an introduction for potential clients and also acts as a portfolio
+                        to document his past works.</p>
+                    <p class="tag">Key Responsibilities</p>
+                    <p>Web Design</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="codefest">
+        <div class="modal-inner clearfix">
+            <div class="modal-header clearfix">
+                <div class="modal-head-left left">
+                    <p class="tag">September 2019</p>
+                    <h3>CodeFest 2019</h3>
+                </div>
+                <div class="modal-head-right right">
+                    <img class='close' src="img/close.svg" alt="Close CodeFest 2019 Modal" />
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-left left">
+                    <div class="gallery-selected-image">
+                        <img src="img/code-fest-elaborate.png" alt="CodeFest 2019" />
+                    </div>
+                </div>
+                <div class="modal-body-right left">
+                    <p class="tag">Title</p>
+                    <h4>Techno Johou Think</h4>
+                    <p class="tag">Date</p>
+                    <h4>September 2019</h4>
+                    <p class="tag">Tools</p>
+                    <ul>
+                        <li>PHP</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Adobe Illustrator</li>
+                    </ul>
+                    <p class="tag">Client Overview</p>
+                    <p>Following my Polytechnic internship with <strong><a class="blue" href="https://roboto.sg"
+                                target="_blank">Roboto Coding Academy,</a></strong> I
+                        joined the company as a full-time Web Developer.</p>
+                    <p>The goal of the website is to promote CodeFest 2019 to investors and let interested participants
+                        find out more
+                        about the event details.</p>
+                    <p class="tag">Key Responsibilities</p>
+                    <p>Web Design</p>
+                    <p>Web Development</p>
+                    <a href="https://codefest.sg/" target="_blank" class="big-cta">Visit Site (Active) &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="tjthink">
+        <div class="modal-inner clearfix">
+            <div class="modal-header clearfix">
+                <div class="modal-head-left left">
+                    <p class="tag">August 2016</p>
+                    <h3>Techno Johou Think</h3>
+                </div>
+                <div class="modal-head-right right">
+                    <img class='close' src="img/close.svg" alt="Close Techno Johou Think Modal" />
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-left left">
+                    <div class="gallery-selected-image">
+                        <img src="img/tj-think-elaborate.png" alt="Techno Johou Think" />
+                    </div>
+                </div>
+                <div class="modal-body-right left">
+                    <p class="tag">Title</p>
+                    <h4>Techno Johou Think</h4>
+                    <p class="tag">Date</p>
+                    <h4>August 2016</h4>
+                    <p class="tag">Tools</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Adobe Illustrator</li>
+                    </ul>
+                    <p class="tag">Client Overview</p>
+                    <p>テクノ情報シンク ( Techno Johou Think ) offers companies IT solutions to solve their business problems.
+                        They focus on Web, Business, and System development.</p>
+                    <p>I renewed their website design to give it a more modern feel and make it truly reflect the
+                        company’s quality of service.</p>
+                    <p class="tag">Key Responsibilities</p>
+                    <p>Web Design</p>
+                    <p>Web Development</p>
+                    <a href="https://www.tj-think.co.jp/" target="_blank" class="big-cta">Visit Site (Active) &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="sifrjp">
+        <div class="modal-inner clearfix">
+            <div class="modal-header clearfix">
+                <div class="modal-head-left left">
+                    <p class="tag">October 2014</p>
+                    <h3>Sifr Japan</h3>
+                </div>
+                <div class="modal-head-right right">
+                    <img class='close' src="img/close.svg" alt="Close Sifr Japan Modal" />
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-left left">
+                    <div class="gallery-selected-image">
+                        <img src="img/sifr-japan-elaborate.png" alt="Sifr Japan" />
+                    </div>
+                </div>
+                <div class="modal-body-right left">
+                    <p class="tag">Title</p>
+                    <h4>Sifr Japan</h4>
+                    <p class="tag">Date</p>
+                    <h4>October 2014</h4>
+                    <p class="tag">Tools</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Adobe Illustrator</li>
+                    </ul>
+                    <p class="tag">Client Overview</p>
+                    <p>Sifr Japan is a website that releases educational articles about Japan, which includes its
+                        culture, language, and tourist attractions.</p>
+                    <p>I had to create a back-end system for the admin to upload &amp; edit articles in addition to the
+                        logo and the appearance of the website.</p>
+                    <p>This website is created for my japanese programming mentor who wanted to write articles about
+                        Japan.</p>
+                    <p class="tag">Key Responsibilities</p>
+                    <p>Web Design</p>
+                    <p>Web Development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="homecooking">
+        <div class="modal-inner clearfix">
+            <div class="modal-header clearfix">
+                <div class="modal-head-left left">
+                    <p class="tag">August 2023</p>
+                    <h3>CS3240 - Homecooking</h3>
+                </div>
+                <div class="modal-head-right right">
+                    <img class='close' src="img/close.svg" alt="Close Homecooking Modal" />
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-left left">
+                    <div class="gallery-selected-image">
+                        <img src="img/home-cooking-elaborate.png" alt="Homecooking" />
+                    </div>
+                </div>
+                <div class="modal-body-right left">
+                    <p class="tag">Title</p>
+                    <h4>CS3240 - Homecooking</h4>
+                    <p class="tag">Date</p>
+                    <h4>August 2023</h4>
+                    <p class="tag">Tools</p>
+                    <ul>
+                        <li>Figma</li>
+                    </ul>
+                    <p class="tag">Problem Statement</p>
+                    <p>How might we make the process of preparing home-cooked meals a less overwhelming and more
+                        pleasant experience?</p>
+                    <p class="tag">Project Description</p>
+                    <p>CS3240 Interaction Design is a NUS course that I took to formally learn and practice UI/UX
+                        techniques in a team setting. Students have to pitch a design problem that they want to solve to
+                        recruit teammates for the project.</p>
+                    <p>My problem statement was shortlisted as one of the 30 selected entries for team formation. The
+                        project spanned three months, involved five team members, and was structured into four phases.
+                        The course loosely followed the Double Diamond design framework throughout the process.</p>
+                    <a href="https://sites.google.com/view/homecooking-co/" target="_blank" class="big-cta">Visit Case
+                        Study Details &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="nusgdg">
+        <div class="modal-inner clearfix">
+            <div class="modal-header clearfix">
+                <div class="modal-head-left left">
+                    <p class="tag">December 2023</p>
+                    <h3>NUSGDG Website Redesign</h3>
+                </div>
+                <div class="modal-head-right right">
+                    <img class='close' src="img/close.svg" alt="Close Homecooking Modal" />
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-left left">
+                    <div class="gallery-selected-image">
+                        <img src="img/nusgdg-elaborate.png" alt="NUSGDG" />
+                    </div>
+                </div>
+                <div class="modal-body-right left">
+                    <p class="tag">Title</p>
+                    <h4>NUSGDG - Website Redesign</h4>
+                    <p class="tag">Date</p>
+                    <h4>December 2023</h4>
+                    <p class="tag">Tools</p>
+                    <ul>
+                        <li>Figma</li>
+                    </ul>
+                    <p class="tag">Problem Statement</p>
+                    <p>How might we clearly showcase the Game Development club’s activities and learning opportunities
+                        to attract and engage new members?</p>
+                    <p class="tag">Project Description</p>
+                    <p>
+                        I specialized in Game Development when I was in Polytechnic, which sparked my interest in
+                        joining
+                        the NUS Games Development Club when I first entered NUS.</p>
+                    <p>
+                        I began researching, and one of the sources of information I used was the club’s website.
+                        However, the website was not very informative, and the entries on the page did not seem recent.
+                    </p>
+                    <p>
+                        I knew that the club was for people who wanted to make games, but what events and workshops did
+                        they have? When, where, and how were they hosted? There were many unanswered questions and
+                        uncertainties, and I hesitated for a while before finally taking the leap to join the club.
+                    </p>
+                    <p>
+                        This experience eventually motivated me to redesign the club’s website when I joined the exco
+                        team as a Web Developer. The goal was to smoothen the experience of information gathering for
+                        prospective members to encourage them to join the club.
+                    </p>
+                    <a href="https://nusgdg.org/" target="_blank" class="big-cta">Visit Site (Active) &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2019-2023 Li Haoquan</p>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+        <script src="js/javascript.js"></script>
+    </footer>
 </body>
 
 </html>
